@@ -1,0 +1,26 @@
+language: node_js
+
+node_js:
+  - '12'
+  - '10'
+  - '8'
+
+install:
+  - npm install
+
+jobs:
+  include:
+    - stage: release
+      node_js: lts/*
+      script: npm run build
+      deploy:
+        on:
+          branches:
+            only:
+              - master
+              # a new tag is pushed. Version tags should be of the form: v0.1.0
+              - /^v\d+\.\d+\.\d+.*$/
+        provider: script
+        skip_cleanup: true
+        script:
+          - npx semantic-release

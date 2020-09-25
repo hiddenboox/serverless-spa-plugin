@@ -1,0 +1,5 @@
+{
+  "recursive": true,
+  "bail": true,
+  "require": ["@babel/register", "chai/register-should"]
+}
