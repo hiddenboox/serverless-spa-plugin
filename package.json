@@ -1,9 +1,9 @@
 {
-  "name": "<lib-name>",
-  "version": "<lib-version>",
+  "name": "serverless-spa-plugin",
+  "version": "0.0.1",
   "description": "<lib-description>",
-  "main": "dist/<lib-name>.cjs.js",
-  "module": "dist/<lib-name>.esm.js",
+  "main": "dist/serverless-spa-plugin.cjs.js",
+  "module": "dist/serverless-spa-plugin.esm.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --exit",
     "test:watch": "./node_modules/.bin/mocha --watch --watch-extensions js \"test/**/*.js\"",
@@ -19,19 +19,19 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/hiddenboox/node-lib-template.git"
+    "url": "https://github.com/hiddenboox/serverless-spa-plugin.git"
   },
   "keywords": [
-    "request",
-    "api",
-    "https"
+    "serverless",
+    "spa",
+    "plugin"
   ],
   "author": "Sebastian Sobociński <sebastian@soft-bind.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hiddenboox/node-lib-template/issues"
+    "url": "https://github.com/hiddenboox/serverless-spa-plugin/issues"
   },
-  "homepage": "https://github.com/hiddenboox/node-lib-template#readme",
+  "homepage": "https://github.com/hiddenboox/serverless-spa-plugin#readme",
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.8.4",
